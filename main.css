@@ -1,0 +1,458 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Calibri Light', Calibri, sans-serif;
+}
+
+.holder {
+	
+}
+
+.header {
+	border-bottom: 3px solid #dc0000;
+	background-color: #fcfcfc;
+	position: fixed;
+	z-index: 99999;
+	width: 100vw;
+}
+
+.branding-and-navigation {
+	margin: 0px auto;
+	width: 1000px;
+}
+
+.top-row {
+	display: flex;
+}
+
+.branding {
+	flex-grow: 1;
+}
+
+.branding img {
+	margin-top: 5px;
+}
+
+.social-media-icons {
+	padding: 10px;
+	flex-grow: 1;
+}
+
+.social-media-icons ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.social-media-icons ul li a img {
+	height: 24px;
+	width: 24px;
+	margin: 5px;
+}
+
+.main-menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.main-menu ul li {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.main-menu ul li a {
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #dc0000;
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li.active a {
+	background: #dc0000;
+	color: #fff;
+}	
+
+.pages {
+	
+}
+
+.page {
+	
+}
+
+.page .content {
+	margin: 0px auto;
+	width: 1000px;
+	padding: 0px 10px;
+	padding-top: 110px;
+	min-height: calc(100vh);
+}
+
+.page:last-child .content {
+	min-height: calc(100vh - 120px);
+}
+
+.footer {
+	border-top: 3px solid #dc0000;
+	padding: 20px 10px 40px 10px;
+	background: #fcfcfc;
+}
+
+.footer-blocks {
+	width: 1000px;
+	margin: 0px auto;
+	display: flex;
+}
+
+.footer .block {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.footer .block:first-child {
+	text-align: left;
+}
+
+.footer .block:last-child {
+	text-align: right;
+}
+
+.footer-menu ul {
+	list-style: none;
+}
+
+.footer-menu ul li a {
+	text-decoration: none;
+	color: #dc0000;
+}
+
+.footer-menu ul li a:hover {
+	text-decoration: underline;
+}
+
+.pages .page#pocetna {
+	background: url(../img/bg01.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pages .page#pocetna .content {
+	
+}
+
+.pages .page#o-nama {
+	background: #fcfcfc;
+}
+
+.pages .page#usluge {
+	background: url(../img/bg02.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pages .page#usluge .content {
+	
+}
+
+.page a {
+	text-decoration: none;
+	color: #dc0000;
+}
+
+.page a:hover {
+	text-decoration: underline;
+}
+
+.pages .page#proizvodi {
+	background: #fcfcfc;
+}
+
+.pages .page#karijera {
+	background: url(../img/bg03.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pages .page#karijera .content {
+	
+}
+
+.pages .page#kontakt {
+	background: #fcfcfc;
+}
+
+#pocetna .content h1 {
+	text-align: center;
+	margin-top: calc(40vh - 200px);
+	font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+	margin-bottom: 70px;
+}
+
+.page .content h2 {
+	text-align: center;
+	font-size: 32px;
+	margin: 20px 0 40px 0;
+}
+
+.big-boxed-text {
+	border: 1px solid #eeeeee;
+	background: #44444488;
+	font-size: 40px;
+	text-align: center;
+	padding: 30px;
+	color: #fff;
+	box-shadow: 0px 0px 10px 2px #00000088;
+}
+
+.facts {
+	display: flex;
+}
+
+.fact {
+	flex-grow: 1;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.fact .number-circle {
+	border: 1px solid transparent;
+	display: inline-block;
+	border-radius: 100%;
+	background: #dc0000;
+	text-align: center;
+	transition: 200ms;
+	padding: 25%;
+	color: #fff;
+}
+	
+.fact .number-circle:hover {
+	border: 1px solid #dc0000;
+	background: #fff;
+	color: #dc0000;
+}
+
+.fact .number-circle .number {
+	font-size: 60px;
+	font-weight: bold;
+	width: 80px;
+	height: 80px;
+}
+
+.fact .name {
+	font-size: 24px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.technologies {
+	display: flex;
+	margin-top: 45px;
+}
+
+.technology {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.technology img {
+	height: 48px;
+	width: 48px;
+}
+
+.technology .name {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.big-text {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.white {
+	color: #fff;
+}
+
+.big-text.white {
+	
+}
+
+.services-row {
+	display: flex;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.services-row .service {
+	border: 1px solid #fff;
+	flex-grow: 1;
+	position: relative;
+	margin: 10px;
+	transition: 300ms;
+}
+
+.services-row .service:hover {
+	border: 1px solid #dc0000;
+}
+
+.services-row .service img {
+	width: 100%;
+	height: auto;
+}
+
+.services-row .service .name {
+	border-top: 1px solid #ffffff;
+	background: #ffffffbb;
+	position: absolute;
+	transition: 300ms;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+	padding: 10px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+.services-row .service:hover .name {
+	border-top: 1px solid #dc0000;
+	background: #dc0000bb;
+	color: #fff;
+}
+
+.product-grid {
+	display: grid;
+	grid-template: "a b c"
+	               "d b e"
+	               "f f g"
+	               "h i g";
+}
+
+.product {
+	border: 1px solid #dc0000;
+	text-align: center;
+	position: relative;
+	transition: 200ms;
+	padding: 75px;
+	margin: 10px;
+}
+
+.product img,
+.product .name {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.product .name {
+	background: #dc0000;
+	transition: 300ms;
+	color: #fff;
+	opacity: 0.0;
+	padding: 10px;
+	font-size: 32px;
+}
+
+.product .name:hover {
+	opacity: 1.0;
+}
+
+.product-a { grid-area: a; }
+.product-b { grid-area: b; }
+.product-c { grid-area: c; }
+.product-d { grid-area: d; }
+.product-e { grid-area: e; }
+.product-f { grid-area: f; }
+.product-g { grid-area: g; }
+
+.careers-block {
+	display: flex;
+}
+
+.careers-block .careers-list {
+	min-width: 350px;
+}
+
+.careers-block .careers-list .careers-list-item {
+	border: 1px solid #ffffff;
+	background: #ffffffbb;
+	margin: 0 20px 10px 0;
+	font-weight: bold;
+	font-size: 26px;
+	display: block;
+	padding: 10px;
+}
+
+.careers-block .careers-items {
+	
+}
+
+.careers-items input[type=radio] {
+	display: none;
+}
+
+.careers-item {
+	border: 1px solid #ffffff;
+	background: #ffffffbb;
+	font-size: 24px;
+	padding: 20px;
+	display: none;
+}
+
+.careers-items input[type=radio]:checked+.careers-item {
+	display: block;
+}
+
+.careers-item h3 {
+	margin-bottom: 20px;
+}
+
+.careers-item p {
+	margin-bottom: 10px;
+}
+
+.careers-item p:last-child {
+	margin-bottom: 0px;
+}
+
+.careers-item ul {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+.contact-page-layout {
+	display: grid;
+	grid-template: "adrese  mapa"
+	               "mejlovi mapa";
+	grid-template-columns: 300px 1fr;
+}
+
+.contact-page-layout .addresses {
+	grid-area: adrese;
+	margin-bottom: 20px;
+}
+
+.contact-page-electronic .addresses {
+	grid-area: mejlovi;
+}
+
+.contact-page-layout .map {
+	grid-area: mapa;
+	margin-left: 30px;
+	border: 1px solid #dc0000;
+}
